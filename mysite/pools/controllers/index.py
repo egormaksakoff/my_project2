@@ -13,11 +13,14 @@ def about(request):
 def contacts(request):
     return render(request, 'contacts.html', {})
 
+
 def hobbies(request):
     return HttpResponse("My hobbies")
 
+
 def gallery(request):
     return HttpResponse("My gallery")
+
 
 def photo(request):
     return HttpResponse("My photo")
