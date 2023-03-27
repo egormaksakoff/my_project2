@@ -24,4 +24,5 @@ urlpatterns = [
     path('contacts/', index.contacts),
     path('hobbies/', index.hobbies),
     path('gallery/', index.gallery),
+    path('photo/', index.photo),
 ]
