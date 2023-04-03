@@ -18,6 +18,7 @@ def hobbies(request):
     return HttpResponse("My hobbies")
 
 
+
 def gallery(request):
     return HttpResponse("My gallery")
 
