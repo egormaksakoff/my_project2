@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from pools.controllers import index
+from pools.controllers import feedback
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,4 +26,5 @@ urlpatterns = [
     path('hobbies/', index.hobbies),
     path('gallery/', index.gallery),
     path('photo/', index.photo),
+    path('feedback/', feedback.create),
 ]

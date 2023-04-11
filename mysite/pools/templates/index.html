@@ -540,15 +540,10 @@
           </div>
           <div class="contact-rigth">
             <p>I'm always open to discussing product <br><span>design work or partnerships.</span></p>
-            <form action="" class="contact-form">
-              <div class="first-row">
-                <input type="text" placeholder="Name">
-              </div>
-              <div class="second-row">
-                <input type="email" placeholder="Email">
-                <input type="text" placeholder="Subject">
-              </div>
+            <form action="feedback/" method="post" class="contact-form">
+              {% csrf_token %}
               <div class="third-row">
+                <input name="email" type="email" placeholder="Email">
                 <textarea name="message" id="" rows="7" placeholder="Message"></textarea>
               </div>
               <button class="btn" type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
