@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path
 from pools.controllers import index
 from pools.controllers import feedback
+from pools.controllers import api
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -27,4 +28,6 @@ urlpatterns = [
     path('gallery/', index.gallery),
     path('photo/', index.photo),
     path('feedback/', feedback.create),
+    path('feedback/index', feedback.index),
+    path('api/index', api.index),
 ]
